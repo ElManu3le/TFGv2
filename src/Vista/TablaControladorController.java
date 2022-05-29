@@ -94,6 +94,7 @@ public class TablaControladorController implements Initializable {
     }
 
     @FXML
+    /**fUNCION iNSERTAR DATOS EN LA TABLA Y MYSQL */
     private void agregarTabla() {
 
         conection = ConnectarDB.ConnectionDB();
