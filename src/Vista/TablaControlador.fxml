@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="552.0" prefWidth="939.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vista.TablaControladorController">
+   <children>
+      <TableView fx:id="tablaPersonas" layoutX="32.0" layoutY="105.0" prefHeight="429.0" prefWidth="589.0">
+        <columns>
+          <TableColumn fx:id="dniColum" prefWidth="75.0" text="DNI" />
+          <TableColumn fx:id="nombreColum" prefWidth="75.0" text="NOMBRE" />
+            <TableColumn fx:id="apellidosColum" prefWidth="75.0" text="APELLIDOS" />
+            <TableColumn fx:id="generoColum" prefWidth="75.0" text="GENERO" />
+            <TableColumn fx:id="ciudadColum" prefWidth="75.0" text="CIUDAD" />
+            <TableColumn fx:id="cpColum" prefWidth="103.0" text="CODIGO_POSTAL" />
+        </columns>
+      </TableView>
+      <Pane layoutY="60.0" prefHeight="5.0" prefWidth="748.0" style="-fx-background-color: black;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <Text layoutX="32.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TABLA CONTROL">
+         <font>
+            <Font name="Arial Bold Italic" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="692.0" layoutY="49.0" onMouseClicked="#close" strokeType="OUTSIDE" strokeWidth="0.0" text="X" textAlignment="CENTER" wrappingWidth="41.58984375" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Text>
+      <Label layoutX="656.0" layoutY="226.0" text="DNI" AnchorPane.leftAnchor="656.0" />
+      <Label layoutX="656.0" layoutY="262.0" text="NOMBRE" AnchorPane.leftAnchor="656.0" />
+      <Label layoutX="656.0" layoutY="297.0" text="APELLIDOS" AnchorPane.leftAnchor="656.0" />
+      <Label layoutX="656.0" layoutY="329.0" text="GENERO" AnchorPane.leftAnchor="656.0" />
+      <Label layoutX="655.0" layoutY="362.0" text="CIUDAD" />
+      <Label layoutX="656.0" layoutY="397.0" text="CP" AnchorPane.leftAnchor="656.0" />
+      <TextField fx:id="dniTextField" layoutX="752.0" layoutY="222.0" promptText="DNI" />
+      <TextField fx:id="nombreTextField" layoutX="752.0" layoutY="258.0" promptText="NOMBRE" />
+      <TextField fx:id="apellidosTextField" layoutX="752.0" layoutY="293.0" promptText="APELLIDOS" />
+      <TextField fx:id="generoTextField" layoutX="752.0" layoutY="325.0" promptText="GENERO" />
+      <TextField fx:id="ciudadTextField" layoutX="752.0" layoutY="358.0" promptText="CIUDAD" />
+      <TextField fx:id="cpTextField" layoutX="752.0" layoutY="393.0" promptText="CODIGO POSTAL" />
+      <Button fx:id="btnAgregar" layoutX="651.0" layoutY="451.0" mnemonicParsing="false" onAction="#agregarTabla" text="AGREGAR" />
+   </children>
+</AnchorPane>

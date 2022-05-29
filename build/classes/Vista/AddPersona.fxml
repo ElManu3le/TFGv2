@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="472.0" prefWidth="417.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vista.AddPersonaController">
+   <children>
+      <TextField fx:id="dniTXT" layoutX="202.0" layoutY="82.0" />
+      <Label layoutX="35.0" layoutY="84.0" prefHeight="17.0" prefWidth="87.0" text="DNI">
+         <font>
+            <Font name="Comic Sans MS Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="115.0" prefHeight="17.0" prefWidth="87.0" text="NOMBRE">
+         <font>
+            <Font name="Comic Sans MS Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="145.0" prefHeight="17.0" prefWidth="87.0" text="APELLIDOS">
+         <font>
+            <Font name="Comic Sans MS Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="179.0" prefHeight="17.0" prefWidth="87.0" text="GENERO">
+         <font>
+            <Font name="Comic Sans MS Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="215.0" prefHeight="17.0" prefWidth="87.0" text="CIUDAD">
+         <font>
+            <Font name="Comic Sans MS Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="253.0" prefHeight="21.0" prefWidth="124.0" text="CODIGO POSTAL">
+         <font>
+            <Font name="Comic Sans MS Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nombreTXT" layoutX="202.0" layoutY="113.0" />
+      <TextField fx:id="apellidosTXT" layoutX="202.0" layoutY="143.0" />
+      <TextField fx:id="generoTXT" layoutX="202.0" layoutY="177.0" />
+      <TextField fx:id="ciudadTXT" layoutX="202.0" layoutY="213.0" />
+      <TextField fx:id="cpTXT" layoutX="202.0" layoutY="251.0" />
+      <Button fx:id="save" layoutX="96.0" layoutY="357.0" mnemonicParsing="false" onAction="#Add" text="GUARDAR" />
+   </children>
+</AnchorPane>
